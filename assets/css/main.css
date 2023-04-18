@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #6c7289; }
+
+body {
+  background-color: #f2ebe3;
+  font-weight: 500; }
+  body main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 550px;
+    min-height: 400px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 50px auto; }
+    body main .imagen {
+      background-image: url(../../images/image-product-desktop.jpg);
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px 0 0 10px; }
+    body main .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px; }
+      body main .card .titulo1 {
+        text-transform: uppercase;
+        letter-spacing: 5px; }
+      body main .card .titulo2 {
+        font-family: "Fraunces", serif;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.1;
+        color: #1c232b; }
+      body main .card .precio {
+        display: flex;
+        align-items: center;
+        gap: 20px; }
+        body main .card .precio .precio1 {
+          font-size: 30px;
+          font-family: "Fraunces", serif;
+          color: #3c8067;
+          font-weight: 700; }
+        body main .card .precio .precio2 {
+          text-decoration: line-through; }
+      body main .card .boton {
+        background-color: #3c8067;
+        padding: 15px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        gap: 10px; }
+        body main .card .boton p {
+          color: white; }
+        body main .card .boton:hover {
+          background-color: #1a382d; }
+
+@media screen and (max-width: 553px) {
+  body main {
+    grid-template-columns: 1fr;
+    margin: 20px;
+    max-width: 337px; }
+    body main .imagen {
+      background-image: url(../../images/image-product-mobile.jpg);
+      height: 250px;
+      border-radius: 10px 10px 0 0; }
+    body main .card {
+      gap: 20px; } }
